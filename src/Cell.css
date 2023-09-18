@@ -1,0 +1,36 @@
+.Cell {
+  height: 100px;
+  width: 100px;
+  background-color: darkgray;
+  cursor: pointer;
+  opacity: 70%;
+}
+
+.Cell:hover {
+  opacity: 1.0;
+  transition: opacity .2s ease-in-out;
+  -moz-transition: opacity .2s ease-in-out;
+  -webkit-transition: opacity .2s ease-in-out;
+}
+
+.Cell-lit {
+  background-color: rgb(252, 248, 173);
+  opacity: 70%;
+}
+
+.Cell-lit:hover {
+  opacity: 1.0;
+  transition: opacity .2s ease-in-out;
+  -moz-transition: opacity .2s ease-in-out;
+  -webkit-transition: opacity .2s ease-in-out;
+}
+
+@keyframes fadeIn {
+  0% { opacity: .8; }
+  100% { opacity: 1; }
+}
+
+@keyframes fadeOut {
+  0% { opacity: 1; }
+  100% { opacity: .8; }
+}
